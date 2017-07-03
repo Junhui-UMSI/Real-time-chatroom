@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import ChatApp from './component/ChatApp/ChatApp';
 import './index.css';
 
 ReactDOM.render(
-  <App />,
+  <ChatApp />,
   document.getElementById('root')
 );
