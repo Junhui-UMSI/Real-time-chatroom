@@ -17,6 +17,8 @@ var http = require('http');
 var socketIO = require('socket.io');
 var io = socketIO();
 
+var chatSocketService = require('./services/chatSocketService')(io);
+
 var server = http.createServer(app);
 io.attach(server);
 server.listen(3000);
