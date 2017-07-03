@@ -1,0 +1,8 @@
+#chat-result{
+  border: 1px solid;
+  width: 400px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}

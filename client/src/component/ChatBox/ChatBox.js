@@ -5,11 +5,12 @@ class ChatBox extends Component {
   render() {
     return(
       <section>
-        <form id="user_input">
-        </form>
-        <textarea form="user_input">
-          Enter text here...
+        <textarea form="user_input" className="input-textarea">
+
         </textarea>
+        <form id="user_input">
+          <button type="submit">Submit</button>
+        </form>
       </section>
     );
   }
