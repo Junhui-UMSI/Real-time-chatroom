@@ -16,7 +16,7 @@ Frontend  - -  Server   (node.js,  Socket.io)
 Backend - - Database (MongoDB, GridFS for image and emoji storing)  
 
 ## Project Structure
-![Alt text](Socket.png)
+![Alt text](/images/Socket.png)
 #### React JS Component
 ChatPanel:  Component for Chat Room  
 ChatBox: Component for displaying chat messages  
@@ -27,12 +27,12 @@ Register: Component for user register page
 
 
 ## Data Flow
-![Alt text](EventListener.png)
+![Alt text](/images/EventListener.png)
 #### Socket Event Listener
 Join: When a user joins the chat room, trigger this event. Will take user_id, group_id and group_number  
 Leave: When a user leaves the chat room, trigger this event. Will take user_id, group_id and group_number  
 Change: When the chatbox has changes, triggers the event, which divides into three different circumstances: add, revert and typing hint. add will take user_id, group_id, time and message itself. revert will take user_id, group_id, message and time.
 
 ## Use Case
-![Alt text](UseCase.png)
+![Alt text](/images/UseCase.png)
 The use case here takes the circumstances which user add a new message into a chatbox as an example.
