@@ -1,3 +1,5 @@
 module.exports = function(io){
-  console.log("called this services");
+  io.on('connection', (socket) => {
+    console.log("Socket: ", socket);
+  });
 }
