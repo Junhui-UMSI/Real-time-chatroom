@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ChatApp from './component/ChatApp/ChatApp';
+import {Router, Route, browserHistory} from 'react-router';
+import routes from './routes';
 import './index.css';
 
 ReactDOM.render(
-  <ChatApp />,
+  <Router history={browserHistory} routes={routes} />,
   document.getElementById('root')
 );
