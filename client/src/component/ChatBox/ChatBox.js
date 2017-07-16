@@ -21,6 +21,13 @@ class ChatBox extends Component {
     this.handleMessageEvent();
   }
 
+  componentWillUnMount(){
+      console.log("Component Will Unmount called");
+      socket.emit('leave_chat', {
+        room: "yes"
+      })
+  }
+
   handleOnChange(ev){
     console.log("target: ",ev.target.value);
     this.setState({
